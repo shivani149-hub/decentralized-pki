@@ -1,6 +1,6 @@
 // API Service for Decentralized PKI Framework
 
-const API_BASE = "/api";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "/api";
 
 export function getToken() {
   return localStorage.getItem("dpki_token");
